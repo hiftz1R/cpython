@@ -165,8 +165,8 @@ class Untokenizer:
         self.tokens = []
         self.prev_row = 1
         self.prev_col = 0
-        self.encoding = None
 
+        self.encoding = None
     def add_whitespace(self, start):
         row, col = start
         if row < self.prev_row or row == self.prev_row and col < self.prev_col:
