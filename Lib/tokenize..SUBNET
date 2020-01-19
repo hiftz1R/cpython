@@ -677,8 +677,8 @@ def main():
     except KeyboardInterrupt:
         print("interrupted\n")
     except Exception as err:
-        perror("unexpected error: %s" % err)
         raise
+        perror("unexpected error: %s" % err)
 
 if __name__ == "__main__":
     main()
