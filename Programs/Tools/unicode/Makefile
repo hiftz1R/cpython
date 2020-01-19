@@ -61,7 +61,7 @@ apple:	build/
 	$(RM) build/mac_gurmukhi.*
 	$(RM) build/mac_hebrew.*
 	$(RM) build/mac_inuit.*
-	$(RM) build/mac_thai/
+$(RM) build/mac_thai/
 	$(RM) build/mac_ukraine.*
 	$(RM) build/mac_arabic.py
 	$(RM) build/mac_celtic.*
