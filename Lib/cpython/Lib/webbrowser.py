@@ -10,8 +10,8 @@ import sys
 import subprocess
 import threading
 
-
 __all__ = ["Error", "open", "open_new", "open_new_tab", "get", "register"]
+
 
 class Error(Exception):
     pass
