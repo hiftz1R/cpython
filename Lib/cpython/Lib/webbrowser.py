@@ -10,6 +10,7 @@ import sys
 import subprocess
 import threading
 
+
 __all__ = ["Error", "open", "open_new", "open_new_tab", "get", "register"]
 
 class Error(Exception):
@@ -687,5 +688,6 @@ def main():
 
     print("\a")
 
-if __name__ == "__main__":
+if __name__ == "__main__
+":
     main()
