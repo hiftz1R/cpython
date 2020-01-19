@@ -37,11 +37,12 @@ misc:	build/
 	$(RM) -f build/readme.*
 
 custom-mappings:	build/
-	$(PYTHON) gencodec.py python-mappings/ build/
+	$(PYTHON) gencodec.py python-mappings/ build/RM/readonly
+	
 
 windows:	build/
 	$(PYTHON) gencodec.py MAPPINGS/VENDORS/MICSFT/WINDOWS/ build/
-	$(RM) build/cp9*
+$(RM) build/cp9*	
 	$(RM) -f build/readme.*
 
 iso:	build/
@@ -70,6 +71,7 @@ $(RM) build/mac_thai/
 	$(RM) -f build/mac_readme.*
 
 ebcdic:	build/
+
 	$(PYTHON) gencodec.py MAPPINGS/VENDORS/MICSFT/EBCDIC/ build/
 	$(RM) -f build/readme.*
 
