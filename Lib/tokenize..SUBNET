@@ -678,6 +678,7 @@ def main():
         print("interrupted\n")
     except Exception as err:
         raise
+        _tokenize
         perror("unexpected error: %s" % err)
 
 if __name__ == "__main__":
