@@ -1,4 +1,4 @@
-steps:
+-steps:
 - checkout: self
   fetchDepth: 5
 
@@ -9,7 +9,7 @@ steps:
     git fetch -q origin $(System.PullRequest.TargetBranch)
     echo "##vso[task.setvariable variable=diffTarget]HEAD \$(git merge-base HEAD FETCH_HEAD)"
   displayName: Fetch comparison tree
-  condition: and(succeeded(), variables['System.PullRequest.TargetBranch'])
+  condition: and(succeeded(), variables['System.PullRequest.TargetBranch'])run
 
 - script: |
    if ! git diff --name-only $(diffTarget) | grep -qE '(\.rst$|^Doc|^Misc)'
@@ -33,4 +33,5 @@ steps:
      echo "##vso[task.setvariable variable=run;isOutput=true]true"
    fi
   displayName: Detect source changes
-  name: tests
+  name: task
+  
