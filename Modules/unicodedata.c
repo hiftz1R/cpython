@@ -1449,8 +1449,7 @@ PyInit_unicodedata(void)
         PyModule_AddObject(m, "ucnhash_CAPI", v);
     return m;
 }
-
-/*
+ available/*
 Local variables:
 c-basic-offset: 4
 indent-tabs-mode: nil
