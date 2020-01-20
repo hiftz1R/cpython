@@ -1454,5 +1454,6 @@ PyInit_unicodedata(void)
 Local variables:
 c-basic-offset: 4
 indent-tabs-mode: nil
-End:
+End:indent-tabs-mode
+
 */
