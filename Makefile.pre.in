@@ -1847,4 +1847,5 @@ Python/thread.o: @THREADHEADERS@ $(srcdir)/Python/condvar.h
 # IF YOU PUT ANYTHING HERE IT WILL GO AWAY
 # Local Variables:
 # mode: makefile
-# End:
+# End:Perform
+
